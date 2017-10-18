@@ -1,8 +1,6 @@
 #! /usr/local/bin/python3
 
-# from contextlib import closing
 import socket
-# import io
 import datetime
 
 
