@@ -76,10 +76,4 @@ def get_content_type_map():
 
 
 def get_content_type(ext):
-
-    ret = get_content_type_map()[ext.lower()]
-
-    if ret is None:
-        return "application/octet-stream"
-    else:
-        return ret
+    return get_content_type_map().get(ext.lower(), "application/octet-stream")
